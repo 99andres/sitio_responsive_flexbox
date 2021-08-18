@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/quienes_somos.css">
+    <title>Document</title> 
+</head>
+<body>
+ <div class='contenedor'>
+     <nav class="encabezado">
+        <div class="minimizar">
+            <button id='accion' onclick="accion()">minimizar</button>
+        </div> 
+        <div class="item ocultar inicio" >
+            <a href="./index.html"> inicio</a></div>
+        <div class="item ocultar  quienes">
+            <a href="quienes_somos.html">historia </a>
+        </div>
+        <div class="item ocultar  cerrar" >
+            <a href="#">cerrar session</a>
+        </div>
+     </nav>
+     <section> 
+         <div class='imagen'>
+             <img src="https://cdn.techtitute.com/techtitute/cursos/01572793/recursos/contenidos/experto-universitario-innovaci%C3%B3n-docente-did%C3%A1ctica-de-la-historia-y-la-geograf%C3%ADa-en-secundaria-y-bachillerato.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero amet officia fuga odit, aspernatur ea quae repudiandae facilis velit, optio culpa mollitia enim expedita illum natus autem necessitatibus? In?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero amet officia fuga odit, aspernatur ea quae repudiandae facilis velit, optio culpa mollitia enim expedita illum natus autem necessitatibus? In
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero amet officia fuga odit, aspernatur ea quae repudiandae facilis velit, optio culpa mollitia enim expedita illum natus autem necessitatibus? In
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero amet officia fuga odit, aspernatur ea quae repudiandae facilis velit, optio culpa mollitia enim expedita illum natus autem necessitatibus? In
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero amet officia fuga odit, aspernatur ea quae repudiandae facilis velit, optio culpa mollitia enim expedita illum natus autem necessitatibus? In
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero amet officia fuga odit, aspernatur ea quae repudiandae facilis velit, optio culpa mollitia enim expedita illum natus autem necessitatibus? In
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero amet officia fuga odit, aspernatur ea quae repudiandae facilis velit, optio culpa mollitia enim expedita illum natus autem necessitatibus? In
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero amet officia fuga odit, aspernatur ea quae repudiandae facilis velit, optio culpa mollitia enim expedita illum natus autem necessitatibus? In
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero amet officia fuga odit, aspernatur ea quae repudiandae facilis velit, optio culpa mollitia enim expedita illum natus autem necessitatibus? In
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero amet officia fuga odit, aspernatur ea quae repudiandae facilis velit, optio culpa mollitia enim expedita illum natus autem necessitatibus? In    
+            </p> 
+         </div>
+         
+         
+            
+         
+     </section>
+     
+     <script >
+        
+        function accion(){
+            
+            let item=document.getElementsByClassName('item')
+            
+
+            for(var a=0;a<=item.length;a++)
+            {
+                item[a].classList.toggle('ocultar')
+                
+            }
+        }
+     </script>
+ </div>   
+</body>
+</html>
