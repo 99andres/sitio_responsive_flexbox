@@ -10,32 +10,65 @@ body{
 }
 .encabezado{
     flex: 1 auto;
-    width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     background: #170d4adb;
-    height: 2.25rem;
+    
 }
-    div.item{
-        height: 100%;
-        display: flex;    
+    
+    .inicio,.quienes,.historia{
+        flex: 1 auto;
+        height: 30px;
+        display: flex;
         justify-content: center;
         align-items: center;
+        
+    }    
+    .cerrar{
+        flex: 2 auto;
+        text-align: end;
+        margin: auto 0px;
+        padding-right: 30px;
     }
-    div.item:hover{
-        background: rgb(167, 124, 85);
+    .encabezado div.item:hover{
+        background: orange;
         transition: 2s;
     }
-    div.item a,div.final a{
+    div a{
         text-decoration: none;
         color: white;
     }
 
-    .item:nth-of-type(1) { flex: 1 auto; }
-    .item:nth-of-type(2) { flex: 1 auto; }
-    .item:nth-of-type(3) { flex: 1 auto; }
-
-    .final{
-        flex: 2 auto;
-        text-align: end;
-        margin:auto 40px;
+div.minimizar{
+    display: none;
+}
+@media (max-width:768px){
+    .encabezado{
+        flex-direction: column;
     }
+    
+    .cerrar{
+        /* text-align: center; */
+        padding: 0;        
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    div.minimizar{
+        text-align: center;
+        display: inline-block;
+        
+    }
+    div.minimizar button{
+        height: 30px;
+        color: white;
+        background: transparent;
+        border: 0;
+    }
+    .ocultar{
+        display: none ;
+    }
+}

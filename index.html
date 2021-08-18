@@ -10,17 +10,45 @@
 <body>
  <div class='contenedor'>
      <nav class="encabezado">
-        <div class="item">
-            <a href="#">inicio</a></div>
-        <div class="item">
-            <a href="#">quienes somos</a></div>
-        <div class="item">
-            <a href="#">historia</a></div>
-        <div class="final">
-            <a href="#">cerrar session</a></div>
+        <div class="minimizar">
+            <button id='accion' onclick="accion()">minimizar</button>
+        </div> 
+        <div class="item ocultar inicio" >
+            <a href="#"> inicio</a></div>
+        <div class="item ocultar  quienes">
+            <a href="#">quienes somos</a>
+        </div>
+        <div class="item ocultar  historia">
+            <a href="#">historia</a>
+        </div>
+        <div class="item ocultar  cerrar" >
+            <a href="#">cerrar session</a>
+        </div>
      </nav>
+     <!-- <section>
+        <article class="izquierda">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibu oluptatibus accusamus, laborum asperiores iure hic ad voluptate numquam ipsum beatae sed expedita fuga dolore magnam harum autem praesentium libero?</p>
+        </article>
+        <article class="derecha|">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibu oluptatibus accusamus, laborum asperiores iure hic ad voluptate numquam ipsum beatae sed expedita fuga dolore magnam harum autem praesentium libero?</p>
+        </article>
+     </section>
+     <footer class="footer">footer</footer> -->
      
-     
+     <script >
+        
+        function accion(){
+            
+            let item=document.getElementsByClassName('item')
+            
+
+            for(var a=0;a<=item.length;a++)
+            {
+                item[a].classList.toggle('ocultar')
+                
+            }
+        }
+     </script>
  </div>   
 </body>
 </html>
