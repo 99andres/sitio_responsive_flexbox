@@ -41,7 +41,28 @@ body{
 
 div.minimizar{
     display: none;
+
 }
+
+.section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}    
+    .lado1{
+        flex: 1 60%;
+        
+    }
+    
+    .aside{
+        flex: 1 40%;
+    }
+.footer{
+    flex: 1 auto;
+    text-align: center;
+}    
+
+
 @media (max-width:768px){
     .encabezado{
         flex-direction: column;
