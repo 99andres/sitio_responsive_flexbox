@@ -61,12 +61,33 @@ div.minimizar{
     align-items: center;
 
 }
+.section2{
+    flex-grow: 1;
+    flex-basis: auto;
+    display: flex;
+}
+    .section2 article{
+        flex-grow: 1;
+        padding: 30px;
+
+    }
 .footer{
     flex: 1 auto;
     text-align: center;
 }    
 
+    .section-contacto{
+        flex-grow: 1; /*es lo mismo flex 1 1 auto o 1 auto*/
+        flex-basis: 100%;
+        display: flex;
 
+    }
+    .gmail{
+        flex: 1 auto;
+    }
+    .telefono{
+        flex: 1 auto;
+    }
 @media (max-width:768px){
     .encabezado{
         flex-direction: column;
