@@ -88,6 +88,21 @@ div.minimizar{
     .telefono{
         flex: 1 auto;
     }
+    .medios_de_pago{
+        flex: 1 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .medios_de_pago div{
+        flex: 1 auto;
+    }
+    
+    .medios_de_pago div img{
+        width: 70px;
+        height: 70px;
+        
+    }
 @media (max-width:768px){
     .encabezado{
         flex-direction: column;
@@ -116,5 +131,8 @@ div.minimizar{
     }
     .ocultar{
         display: none ;
+    }
+    .aside{
+        display: none;
     }
 }
