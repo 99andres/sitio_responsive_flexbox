@@ -54,9 +54,13 @@ div.minimizar{
         
     }
     
-    .aside{
-        flex: 1 40%;
-    }
+.aside{
+    flex: 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .footer{
     flex: 1 auto;
     text-align: center;
